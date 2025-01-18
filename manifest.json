@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Snowfox Proxy",
+  "version": "1.0",
+  "description": "Snowfox - Proxy Client",
+  "permissions": [
+    "proxy",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "API_URL_HERE*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "fox_16x16.png",
+      "48": "fox_48x48.png",
+      "128": "fox_128x128.png"
+    }
+  }
+}
